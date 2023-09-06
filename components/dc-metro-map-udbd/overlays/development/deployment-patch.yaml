@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-udbd
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-pyxis-tenant/appstudio/dc-metro-map-udbd@sha256:3dc360dc8ea54f4e6f69b33bb13bf9bc2a56447e5b72afbd3786efa5c6d0a83a
+        name: my-nodejs
+        resources: {}
+status: {}
